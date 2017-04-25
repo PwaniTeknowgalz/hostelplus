@@ -30,12 +30,12 @@ import uk.co.ribot.easyadapter.annotations.LayoutId;
 import uk.co.ribot.easyadapter.annotations.ViewId;
 
 /**
- * Created by Badru on 03-08-2016.
+ * Created by  on 03-08-2016.
  */
 @LayoutId(R.layout.listitem)
 
 public class MainListHolder extends ItemViewHolder<Hostel> {
-String url="/files/hostels/photo/";
+String url="/files/Hostels/photo";
 String baseurl = getContext().getResources().getString(R.string.baseurl);
     @ViewId(R.id.name)
     TextView name;
@@ -68,13 +68,13 @@ String baseurl = getContext().getResources().getString(R.string.baseurl);
         cost.setText("KSH. "+s.getCost());
         location.setText(s.getLocation());
         amenities.setText(s.getAmenities());
-        Ion.with(getContext()).load(baseurl+url+s.getPhoto_dir()+"/"+s.getPhoto()).intoImageView(photo);
+        Ion.with(getContext()).load(baseurl+url+"/"+s.getPhoto()).intoImageView(photo);
 
         avrating.setRating(getAverage(s.getAppusersHostels()));
         details.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ViewPopup frag = ViewPopup.newInstance(positionInfo.getPosition());
+                ViewPopup frag = ViewPopup.newInstance(s.getId());
                 frag.show(((AppCompatActivity)getContext()).getSupportFragmentManager(), "ViewPopup");
 
             }

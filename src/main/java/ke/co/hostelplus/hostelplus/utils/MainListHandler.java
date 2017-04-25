@@ -1,7 +1,7 @@
 package ke.co.hostelplus.hostelplus.utils;
 
 /**
- * Created by Badru on 03-08-2016.
+ * Created by  on 03-08-2016.
  */
 public interface MainListHandler {
 

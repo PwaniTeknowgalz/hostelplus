@@ -1,7 +1,7 @@
 package ke.co.hostelplus.hostelplus.db;
 
 /**
- * Created by Badru on 4/5/2016.
+ * Created by  on 4/5/2016.
  */
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
@@ -11,7 +11,7 @@ import com.activeandroid.query.Select;
 import java.util.List;
 
 /**
- * Created by Badru on 12/16/2015.
+ * Created by  on 12/16/2015.
  */
 @Table(name = "UserDb")
 public class UserDb extends Model {

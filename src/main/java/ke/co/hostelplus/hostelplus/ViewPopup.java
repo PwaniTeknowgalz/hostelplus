@@ -26,7 +26,7 @@ import ke.co.hostelplus.hostelplus.data.Hostel;
 import ke.co.hostelplus.hostelplus.db.HostelDb;
 
 /**
- * Created by Badru on 21/04/2017.
+ * Created by  on 21/04/2017.
  */
 
 public class ViewPopup  extends DialogFragment {
@@ -52,8 +52,8 @@ public class ViewPopup  extends DialogFragment {
         List<HostelDb> all3 = HostelDb.getAll();
         ArrayList<Hostel> hostels = fetchAll(all3.get(0).getData());
 
-        final Hostel hostel = hostels.get(id);
-        String url="/files/hostels/photo/";
+        final Hostel hostel = findById(id, hostels);
+        String url="/files/Hostels/photo";
         String baseurl = getContext().getResources().getString(R.string.baseurl);
         // Get the layout inflater
         LayoutInflater inflater = getActivity().getLayoutInflater();
@@ -71,7 +71,7 @@ public class ViewPopup  extends DialogFragment {
         contact=(TextView) dialog.findViewById(R.id.contact);
         cost=(TextView) dialog.findViewById(R.id.cost);
     photo = (ImageView) dialog.findViewById(R.id.photo);
-        Ion.with(getContext()).load(baseurl+url+hostel.getPhoto_dir()+"/"+hostel.getPhoto()).intoImageView(photo);
+        Ion.with(getContext()).load(baseurl+url+"/"+hostel.getPhoto()).intoImageView(photo);
         name.setText(hostel.getName());
         location.setText(hostel.getLocation());
         amenities.setText(hostel.getAmenities());
@@ -156,5 +156,16 @@ public class ViewPopup  extends DialogFragment {
         }
         return rowItems;
     }
+    public Hostel findById(int id, ArrayList<Hostel> list){
+        Hostel w = null;
+        for (Hostel dealer:list ){
+            if (dealer.getId()==id) {
+                w=dealer;
+            }
+
+        }
+        return  w;
+    }
+
 
 }

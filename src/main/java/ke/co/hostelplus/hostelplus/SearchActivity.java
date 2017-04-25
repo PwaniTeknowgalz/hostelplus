@@ -30,7 +30,7 @@ import ke.co.hostelplus.hostelplus.utils.MainListHolder;
 import uk.co.ribot.easyadapter.EasyRecyclerAdapter;
 
 /**
- * Created by Badru on 4/6/2016.
+ * Created by  on 4/6/2016.
  */
 public class SearchActivity extends BaseActivity{
     String url;
@@ -101,13 +101,13 @@ public class SearchActivity extends BaseActivity{
 
         ArrayList<Hostel> retain = new ArrayList<Hostel>(s.size());
         for (Hostel dealer : s) {
-            if (dealer.getName().contains(content)) {
+            if (dealer.getName().toLowerCase().contains(content.toLowerCase())) {
                 retain.add(dealer);
-            }else if (dealer.getLocation().contains(content)) {
+            }else if (dealer.getLocation().toLowerCase().contains(content.toLowerCase())) {
                 retain.add(dealer);
-            }else if (dealer.getAmenities().contains(content)) {
+            }else if (dealer.getAmenities().toLowerCase().contains(content.toLowerCase())) {
                 retain.add(dealer);
-            }else if (dealer.getCost().contains(content)) {
+            }else if (dealer.getCost().toLowerCase().contains(content.toLowerCase())) {
                 retain.add(dealer);
             }
         }

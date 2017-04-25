@@ -1,7 +1,7 @@
 package ke.co.hostelplus.hostelplus;
 
 /**
- * Created by Badru on 03-08-2016.
+ * Created by  on 03-08-2016.
  */
 
 import android.content.Intent;
@@ -35,7 +35,7 @@ import ke.co.hostelplus.hostelplus.security.Users;
 
 
 /**
- * Created by Badru on 4/5/2016.
+ * Created by  on 4/5/2016.
  */
 public class LoginActivity extends AppCompatActivity {
 

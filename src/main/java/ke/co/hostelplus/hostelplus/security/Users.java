@@ -1,7 +1,7 @@
 package ke.co.hostelplus.hostelplus.security;
 
 /**
- * Created by Badru on 4/18/2016.
+ * Created by  on 4/18/2016.
  */
 public class Users {
     String token;

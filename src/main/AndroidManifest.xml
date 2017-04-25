@@ -34,7 +34,7 @@
             android:value="1" />
         <meta-data
             android:name="AA_MODELS"
-            android:value="ke.co.hostelplus.db.HostelDb, ke.co.hostelplus.db.UserDb" />
+            android:value="ke.co.hostelplus.hostelplus.db.HostelDb, ke.co.hostelplus.hostelplus.db.UserDb" />
     </application>
 
 </manifest>

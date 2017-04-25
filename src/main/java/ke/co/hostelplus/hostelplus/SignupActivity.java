@@ -31,7 +31,7 @@ import ke.co.hostelplus.hostelplus.security.Users;
 
 
 /**
- * Created by Badru on 4/5/2016.
+ * Created by  on 4/5/2016.
  */
 public class SignupActivity extends AppCompatActivity {
 

@@ -1,7 +1,7 @@
 package ke.co.hostelplus.hostelplus.data;
 
 /**
- * Created by Badru on 19/04/2017.
+ * Created by  on 19/04/2017.
  */
 
 public class AppusersHostels {

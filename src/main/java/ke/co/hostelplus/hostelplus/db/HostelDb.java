@@ -8,7 +8,7 @@ import com.activeandroid.query.Select;
 import java.util.List;
 
 /**
- * Created by Badru on 18/04/2017.
+ * Created by  on 18/04/2017.
  */
 @Table(name = "HostelDb")
 public class HostelDb extends Model{

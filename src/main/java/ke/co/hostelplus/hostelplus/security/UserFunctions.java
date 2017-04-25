@@ -11,7 +11,7 @@ import ke.co.hostelplus.hostelplus.db.UserDb;
 
 
 /**
- * Created by Badru on 4/17/2016.
+ * Created by  on 4/17/2016.
  */
 public class UserFunctions {
     Context context;

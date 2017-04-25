@@ -1,7 +1,7 @@
 package ke.co.hostelplus.hostelplus.db;
 
 /**
- * Created by Badru on 18/04/2017.
+ * Created by  on 18/04/2017.
  */
 
 public class HostelData {

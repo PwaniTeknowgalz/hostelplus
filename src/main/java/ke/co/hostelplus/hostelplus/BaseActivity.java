@@ -26,7 +26,7 @@ import ke.co.hostelplus.hostelplus.security.UserFunctions;
 
 
 /**
- * Created by Badru on 4/4/2016.
+ * Created by  on 4/4/2016.
  */
 public abstract class BaseActivity extends AppCompatActivity {
     private Drawer result = null;

@@ -15,7 +15,7 @@ import com.mikepenz.iconics.IconicsDrawable;
 import com.mikepenz.ionicons_typeface_library.Ionicons;
 
 /**
- * Created by Badru on 4/19/2016.
+ * Created by  on 4/19/2016.
  */
 public class SearchPopup extends DialogFragment {
     TextView title;
